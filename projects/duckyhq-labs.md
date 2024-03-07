@@ -1,8 +1,8 @@
 ---
-title: "DuckyHQ Labs"
+title: "asdfs"
 type: "Minecraft Building Project"
 date: "2024-02-17"
-image: "https://i.imgur.com/KPn6TSE.png"
+image: ""
 ---
 
 Coming soon.

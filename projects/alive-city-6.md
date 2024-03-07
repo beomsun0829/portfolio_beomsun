@@ -1,8 +1,8 @@
 ---
-title: "Alive City 6"
+title: "asdf"
 type: "Minecraft Building Project"
 date: "2024-02-17"
-image: "https://i.imgur.com/h3FBYUO.png"
+image: ""
 ---
 
 Coming soon.

@@ -12,33 +12,6 @@ const hanson = localFont({
   display: "swap",
 });
 
-function getNextStreamDates() {
-  const now = new Date();
-  const options: Intl.DateTimeFormatOptions = {
-    weekday: "long",
-    hour: "2-digit",
-    minute: "2-digit",
-  };
-
-  // Calculate the next Sunday and Thursday
-  let nextSunday = new Date(now);
-  nextSunday.setDate(now.getDate() + ((7 - now.getDay()) % 7));
-  nextSunday.setHours(14, 0, 0, 0); // Set to  2:00 PM
-
-  let nextThursday = new Date(now);
-  nextThursday.setDate(now.getDate() + ((4 - now.getDay()) % 7));
-  nextThursday.setHours(16, 0, 0, 0); // Set to  4:00 PM
-
-  // Format the dates
-  const sundayFormat = new Intl.DateTimeFormat("en-GB", options).format(
-    nextSunday
-  );
-  const thursdayFormat = new Intl.DateTimeFormat("en-GB", options).format(
-    nextThursday
-  );
-
-  return { sunday: sundayFormat, thursday: thursdayFormat };
-}
 
 export default function Home() {
   const projectMetadata = getProjectMetadata();
@@ -46,7 +19,6 @@ export default function Home() {
     <ProjectPreview key={project.slug} {...project} />
   ));
 
-  const { sunday, thursday } = getNextStreamDates();
   return (
     <>
       <div className="flex flex-col max-w-[1300px] w-full py-[200px] gap-24">
@@ -72,7 +44,7 @@ export default function Home() {
         id="projects"
       >
         <h2 className="text-2 font-medium">Projects</h2>
-        <div className="grid grid-cols-2 grid-rows-1 gap-32 w-full h-fit max-[980px]:grid-cols-1">
+        <div className="grid grid-cols-3 grid-rows-1 gap-32 w-full h-fit max-[980px]:grid-cols-1">
           {projectPreviews}
         </div>
       </div>
@@ -91,8 +63,8 @@ export default function Home() {
         <Image
           src={"/screenshots/mc1.png"}
           alt={""}
-          width={1000}
-          height={1000}
+          width={500}
+          height={500}
           className="w-full h-full"
         />
       </div>
@@ -103,14 +75,14 @@ export default function Home() {
         <Image
           src={"/screenshots/mc2.png"}
           alt={""}
-          width={1000}
-          height={1000}
+          width={500}
+          height={500}
           className="w-full h-full"
         />
         <div className="w-full flex flex-col p-64 gap-24 max-[580px]:p-32 max-[580px]:gap-24 h-fit items-end">
           <h2 className="text-2 font-medium text-right">Live Streams</h2>
           <p className="text-body text-right leading-[220%]">
-            dukc streams every {sunday} and {thursday} on Twitch. <br />
+            dukc <br />
             The vods, and clips are uploaded to YouTube. <br />
             The dates are local to your timezone. Current game: Valheim
           </p>
