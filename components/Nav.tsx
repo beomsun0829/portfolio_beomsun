@@ -22,7 +22,7 @@ export default function Nav() {
         { text: "Home", link: "/" },
         { text: "About", link: "/#about" },
         { text: "Tistory", link: "https://beomsun0829.tistory.com/" },
-        { text: "AI Playground", link: "/" },
+        { text: "Playground", link: "/" },
         { text: "?", link: "/" },
     ];
     return (

@@ -7,6 +7,8 @@ import getProjectMetadata from "@/components/projects/getProjectMetadata";
 import ProjectPreview from "@/components/projects/ProjectPreview";
 import Link from "next/link";
 
+import "react-icons/fa";
+
 const hanson = localFont({
   src: "./hanson.woff2",
   display: "swap",
@@ -31,7 +33,7 @@ export default function Home() {
           <p className="text-body">Backend, AI Developer</p>
         </div>
         <div className="flex flex-wrap gap-24 justify-center items-center">
-          <PrimaryButton text="Projects" type="primary" link="#projects" />
+          <PrimaryButton text="Logs" type="primary" link="#projects" />
           <SecondaryButton
             text="GitHub"
             type="secondary"
@@ -43,7 +45,7 @@ export default function Home() {
         className="border border-stroke-1 rounded-out max-w-[1300px] w-full p-64 gap-32 flex flex-col max-[580px]:p-32 max-[580px]:gap-24"
         id="projects"
       >
-        <h2 className="text-2 font-medium">Projects</h2>
+        <h2 className="text-2 font-medium">Logs</h2>
         <div className="grid grid-cols-3 grid-rows-1 gap-32 w-full h-fit max-[980px]:grid-cols-1">
           {projectPreviews}
         </div>
@@ -55,13 +57,12 @@ export default function Home() {
         <div className="w-full flex flex-col p-64 gap-24 max-[580px]:p-32 max-[580px]:gap-24 h-fit">
           <h2 className="text-2 font-medium">About</h2>
           <p className="text-body leading-[220%]">
-            Alive Gaming is a group based on creating innovative and amazing
-            experiences / resources in video games. <br />
-            Our focus is currently on Minecraft.
+            안녕하세요, 재미를 찾는 개발자 홍범순입니다. <br />
+            
           </p>
         </div>
         <Image
-          src={"/screenshots/mc1.png"}
+          src={"/seoCover.png"}
           alt={""}
           width={500}
           height={500}
@@ -73,18 +74,16 @@ export default function Home() {
         id="streams"
       >
         <Image
-          src={"/screenshots/mc2.png"}
+          src={"/seoCover.png"}
           alt={""}
           width={500}
           height={500}
           className="w-full h-full"
         />
         <div className="w-full flex flex-col p-64 gap-24 max-[580px]:p-32 max-[580px]:gap-24 h-fit items-end">
-          <h2 className="text-2 font-medium text-right">Live Streams</h2>
+          <h2 className="text-2 font-medium text-right">Skills</h2>
           <p className="text-body text-right leading-[220%]">
-            dukc <br />
-            The vods, and clips are uploaded to YouTube. <br />
-            The dates are local to your timezone. Current game: Valheim
+            
           </p>
 
           <div className="flex flex-wrap gap-12">
