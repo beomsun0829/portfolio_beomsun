@@ -35,7 +35,7 @@ export default function RootLayout({
       <body className="bg-[#050505] text-white flex flex-col items-center w-screen gap-24 p-48 max-[630px]:px-[20px] overflow-x-hidden">
         <Nav />
         {children}
-        <Footer />
+              {/*<Footer />*/}
         <div className="w-[35rem] h-[30rem] animate-spin-slow animate-colour-change opacity-40 rounded-full blur-[400px] absolute bottom-[0%] left-[36%] -z-50"></div>
       </body>
     </html>

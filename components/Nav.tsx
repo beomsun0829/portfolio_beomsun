@@ -21,8 +21,8 @@ export default function Nav() {
     const navItems = [
         { text: "Home", link: "/" },
         { text: "About", link: "/#about" },
-        { text: "Tistory", link: "https://beomsun0829.tistory.com/" },
         { text: "Playground", link: "/" },
+        { text: "Tistory", link: "https://beomsun0829.tistory.com/" },
         { text: "?", link: "/" },
     ];
     return (

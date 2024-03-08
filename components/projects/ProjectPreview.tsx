@@ -30,9 +30,9 @@ export default function ProjectPreview(props: ProjectMetadata) {
       <Tilt options={tiltOptions}>
         <Link
           href={`/projects/${props.slug}`}
-          className="bg-gradient-to-b from-slate-900 to-slate-700 bg-cover bg-center bg-clip-padding w-full h-auto aspect-[3/1.7] max-[500px]:aspect-[1.7/3] flex flex-col place-content-end align-bottom place-items-end p-32 rounded-in border border-stroke-1 hover:scale-[1.05] active:scale-[.75] duration-150 max-[540px]:p-24"
+          className="bg-gradient-to-r from-slate-900 to-slate-700 bg-cover bg-center bg-clip-padding w-full h-auto aspect-[3/1.7] max-[500px]:aspect-[1.7/3] flex flex-col place-content-end align-bottom place-items-end p-32 rounded-in border border-stroke-1 hover:scale-[1.05] active:scale-[.75] duration-150 max-[540px]:p-24"
         >
-          <h3 className="text-3 w-full font-medium max-[540px]:text-body">
+          <h3 className="text-4 w-full font-medium max-[540px]:text-body">
             {props.title}
           </h3>
           <p className="text-sub w-full">{props.type}</p>
