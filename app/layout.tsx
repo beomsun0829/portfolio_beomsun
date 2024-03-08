@@ -3,7 +3,6 @@ import { Outfit } from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
 import { Viewport } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -18,7 +17,6 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://alive.duckyhq.com"),
   title: "Hong Beomsun - Portfolio",
   description: "Hong Beomsun - Portfolio",
   keywords: [
