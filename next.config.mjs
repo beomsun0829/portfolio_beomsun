@@ -1,17 +1,11 @@
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {
+module.exports = {
+    reactStrictMode: true,
     output: "export",
     images: {
-        remotePatterns: [
-            {
-                protocol: "https",
-                hostname: "i.imgur.com",
-                port: "",
-                pathname: "/**",
-            },
-        ],
-    }
+        domains: ['i.imgur.com'],
+    },
 };
 
 module.exports = nextConfig;    
