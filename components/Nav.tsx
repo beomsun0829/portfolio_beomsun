@@ -21,9 +21,11 @@ export default function Nav() {
     const navItems = [
         { text: "Home", link: "/" },
         { text: "About", link: "/#about" },
+        { text: "Skills", link: "/#skills" },
         { text: "Playground", link: "/" },
         { text: "Tistory", link: "https://beomsun0829.tistory.com/" },
-        { text: "?", link: "/" },
+        { text: "GitHub", link: "https://github.com/beomsun0829" },
+        { text: "Baekjoon", link: "https://solved.ac/profile/beomsun0829" },
     ];
     return (
         <nav className="fixed top-48 max-[630px]:top-24 place-self-center z-50 flex flex-col gap-12 max-w-[1300px] w-full mx-20">

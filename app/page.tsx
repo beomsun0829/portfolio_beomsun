@@ -128,7 +128,7 @@ export default function Home() {
 
             <div
                 className="border border-stroke-1 rounded-out max-w-[1300px] w-full flex max-[880px]:flex-col overflow-clip"
-                id="streams"
+                id="skills"
             >
 
                 <Image
@@ -154,13 +154,6 @@ export default function Home() {
 
                     </div>
                 </div>
-            </div>
-            <div
-                className="border border-stroke-1 rounded-out max-w-[1300px] w-full p-64 gap-32 flex flex-col max-[580px]:p-32 max-[580px]:gap-24"
-                id="downloads"
-            >
-                <h2 className="text-2 font-medium">Downloads</h2>
-                <p className="text-body">Coming soon!</p>
             </div>
         </>
     );
