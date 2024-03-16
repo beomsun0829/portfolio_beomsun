@@ -21,7 +21,7 @@ jobs:
       - run: npm run build
         # This command builds your Next.js application
 
-      - run: npm run export
+      - run: npm run start
         # This command exports your application to static HTML, necessary for GitHub Pages
 
       - name: Deploy to GitHub Pages
