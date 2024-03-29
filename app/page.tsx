@@ -91,7 +91,7 @@ export default function Home() {
                         새로운 기술을 배우고, 새로운 것을 만드는 것을 좋아합니다. <br />
                         많은 프로젝트 경험을 통해 다양한 문제 상황을 경험하고 해결해왔습니다. <br /><br />
                         팀 프로젝트에서는 소통과 협력을 중요시하며, 적합한 기술과 방법론을 사용하여 효율적인 개발을 지향합니다. <br />
-                        <br /><br />
+                        <br />
 
                         <div className="flex items-center gap-4">
                             {/* Tistory Link */}
@@ -116,29 +116,15 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <Image
-                    src={"/images/about_cover.jpg"}
-                    alt={""}
-                    width={300}
-                    height={300}
-                    style={{"alignSelf": 'center'}}
-                    className="w-full h-full"
-                />
+                <img src="/images/about_cover.jpg" alt="" width="600" height="500" style={{ "alignSelf": 'center' }} />
             </div>
 
             <div
                 className="border border-stroke-1 rounded-out max-w-[1300px] w-full flex max-[880px]:flex-col overflow-clip"
                 id="skills"
             >
+                <img src="/images/404.jpg" alt="" width="500" height="500" style={{ "alignSelf": 'center' }} />
 
-                <Image
-                    src={"/images/404.jpg"}
-                    alt={""}
-                    width={300}
-                    height={300}
-                    style={{"alignSelf": 'center'}}
-                    className="w-full h-full"
-                />
                 <div className="w-full flex flex-col p-64 gap-24 max-[580px]:p-32 max-[580px]:gap-24 h-fit items-end">
                     <h2 className="text-2 font-medium text-right">Skills</h2>
                     <div className="flex justify-end gap-16 flex-wrap">
@@ -149,12 +135,25 @@ export default function Home() {
                         ))}
                     </div>
 
-                    <div className="flex flex-wrap gap-12">
+                </div>
+            </div>
 
-
+            <div className="border border-stroke-1 rounded-out max-w-[1300px] w-full flex max-[880px]:flex-col overflow-clip">
+                <div className="w-full flex flex-col p-64 gap-24 max-[580px]:p-32 max-[580px]:gap-24 h-fit">
+                    <h2 className="text-2 font-medium">Obsessed with</h2>
+                    <div className="grid grid-cols-4 gap-4 text-3 leading-[220%] p-4">
+                        <div>Singularity</div>
+                        <div>AI</div>
+                        <div>Robotics</div>
+                        <div>Technology</div>
+                        <div>Quantum Physics</div>
+                        <div>Space Physics</div>
+                        <div>Formula 1</div>
+                        <div>Game</div>
                     </div>
                 </div>
             </div>
+
         </>
     );
 }
