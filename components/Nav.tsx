@@ -22,7 +22,7 @@ export default function Nav() {
         { text: "Home", link: "/" },
         { text: "About", link: "/#about" },
         { text: "Skills", link: "/#skills" },
-        { text: "Playground", link: "/" },
+        { text: "Careers", link: "/#careers" },
         { text: "Tistory", link: "https://beomsun0829.tistory.com/" },
         { text: "GitHub", link: "https://github.com/beomsun0829" },
         { text: "Baekjoon", link: "https://solved.ac/profile/beomsun0829" },
