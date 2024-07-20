@@ -4,8 +4,7 @@ import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
 import { Viewport } from "next";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
+import Nav from "./components/Nav"
 
 const outfit = Outfit({ subsets: ["latin"] });
 

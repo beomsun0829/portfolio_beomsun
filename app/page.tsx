@@ -1,10 +1,8 @@
 import localFont from "next/font/local";
 import Image from "next/image";
-import PrimaryButton from "@/components/PrimaryButton";
-import SecondaryButton from "@/components/SecondaryButton";
+import PrimaryButton from "./components/PrimaryButton";
+import SecondaryButton from "./components/SecondaryButton";
 
-import getProjectMetadata from "@/components/projects/getProjectMetadata";
-import ProjectPreview from "@/components/projects/ProjectPreview";
 import Link from "next/link";
 
 import * as fa from "react-icons/fa";
@@ -21,10 +19,6 @@ const hanson = localFont({
 
 
 export default function Home() {
-    const projectMetadata = getProjectMetadata();
-    const projectPreviews = projectMetadata.map((project) => (
-        <ProjectPreview key={project.slug} {...project} />
-    ));
 
     return (
         <>
